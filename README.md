@@ -22,6 +22,6 @@ In oder to reproduce the results and figures of the paper, execute the following
 
 5. Run ``movie_snapshot.R`` to create the set of images that constitute the movie. This process takes a long time. It will generate 300 png files in the folder ``/data/snapshots/``
 
-6. Go to the folder ``/data/snapshots/`` and execute the command below to create the movie. Here the movie has already been created and corresponds to the file ``data/movie.m4v``
+6. Go to the folder ``/data/snapshots/`` and execute the command below to create the movie. Here the movie ``movie.m4v``has already been created.
 
         ffmpeg -r 3 -start_number 1 -i plot%d.png -s 1080x1080 -ar 44100 -async 44100 -r 29.970 -ac 2 movie.m4v
